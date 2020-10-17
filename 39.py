@@ -13,8 +13,6 @@ class Bowl:
     def __repr__(self):
         return "\n".join([scoop.flavor for scoop in self.scoops])
 
-    def test(self):
-        return self.scoops
     def add_scoops(self, *new_scoops):
         for new_scoop in new_scoops:
             self.scoops.append(new_scoop)
